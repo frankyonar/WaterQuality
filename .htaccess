@@ -1,0 +1,7 @@
+ErrorDocument 404 /404.php
+
+# Facoltativo: Reindirizzamento delle richieste alla root
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /404.php [L]
