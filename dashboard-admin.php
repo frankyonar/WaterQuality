@@ -165,7 +165,8 @@ $_SESSION['user_role'] = $_COOKIE['user_role'];
         .then(data => {
             // Popolare la tabella delle segnalazioni
             const segnalazioniTable = document.querySelector('#segnalazioniTable tbody');
-            segnalazioniTable.innerHTML = ''; // Clear existing rows
+            segnalazioniTable.innerHTML = ''; //cancellare le righe esistenti
+             
             if (data.segnalazioni) {
                 data.segnalazioni.forEach(segnalazione => {
                     const row = document.createElement('tr');
