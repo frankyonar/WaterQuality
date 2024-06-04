@@ -12,3 +12,6 @@ password: 123456
 Credenziali Utente: 
 email: utente1@gmail.com
 password: 123456
+
+La documentazione è nella cartella Docs 
+Il Dump del database è nella cartella Dump 
